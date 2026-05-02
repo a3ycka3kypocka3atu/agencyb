@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STRAIGHTFORWARD AGENCY — Маркетингові дослідження та стратегії</title>
+    <meta name="description" content="Перетворюємо бізнес-задачі на чіткі рішення. AI-маркетинг дослідження, стратегії, аналіз конкурентів. Від $500. Результат за 5-7 днів.">
+    <meta property="og:title" content="STRAIGHTFORWARD AGENCY — Маркетингові дослідження та стратегії">
+    <meta property="og:description" content="Глибокий аналіз ринку за 5-7 днів. Чіткі стратегії з конкретними цифрами.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://straightforward.agency">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%230d0d12' width='100' height='100'/%3E%3Ctext x='50' y='68' font-family='Georgia' font-size='48' font-weight='bold' fill='%23d4a853' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <noscript>
+        <style>
+            .reveal, .fade-in { opacity: 1 !important; transform: none !important; }
+        </style>
+    </noscript>
+</head>
+<body>
+    <!-- Background Effects -->
+    <div class="bg-grain"></div>
+    <div class="bg-grid"></div>
+
+    <!-- HEADER -->
+    <header id="header">
+        <div class="header-content">
+            <a href="#" class="logo">
+                <span class="logo-main">STRAIGHTFORWARD</span>
+                <span class="logo-sub">AGENCY</span>
+            </a>
+            <nav id="nav-links">
+                <a href="#services" data-i18n="nav_services">Послуги</a>
+                <a href="#packages" data-i18n="nav_packages">Пакети</a>
+                <a href="#process" data-i18n="nav_process">Процес</a>
+                <a href="#ecosystem" data-i18n="nav_ecosystem">Екосистема агенцій</a>
+                <a href="#faq" data-i18n="nav_faq">FAQ</a>
+            </nav>
+            <div class="header-actions">
+                <div class="language-switcher">
+                    <button onclick="setLanguage('uk')" id="lang-uk" class="lang-btn active" title="UA">🇺🇦</button>
+                    <button onclick="setLanguage('ru')" id="lang-ru" class="lang-btn" title="RU">🇷🇺</button>
+                    <button onclick="setLanguage('en')" id="lang-en" class="lang-btn" title="EN">🇬🇧</button>
+                    <button onclick="setLanguage('cs')" id="lang-cs" class="lang-btn" title="CZ">🇨🇿</button>
+                </div>
+                <button class="cta-btn" onclick="scrollToForm()" data-i18n="nav_cta">Безкоштовний аудит</button>
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <nav>
+            <a href="#services" onclick="closeMobileMenu()" data-i18n="nav_services">Послуги</a>
+            <a href="#packages" onclick="closeMobileMenu()" data-i18n="nav_packages">Пакети</a>
+            <a href="#process" onclick="closeMobileMenu()" data-i18n="nav_process">Процес</a>
+            <a href="#ecosystem" onclick="closeMobileMenu()" data-i18n="nav_ecosystem">Екосистема агенцій</a>
+            <a href="#faq" onclick="closeMobileMenu()" data-i18n="nav_faq">FAQ</a>
+            <a href="#audit" onclick="closeMobileMenu()" class="mobile-cta" data-i18n="nav_cta">Безкоштовний аудит</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-wrapper">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+                            <span data-i18n="hero_badge">Перетворюємо бізнес-задачі на чіткі рішення</span>
+                        </div>
+
+                        <h1>
+                            <span data-i18n="hero_title_1">Глибокий аналіз ринку</span>
+                            <span data-i18n="hero_title_2">з конкретними цифрами</span>
+                            <span class="highlight" data-i18n="hero_title_3">та планом дій</span>
+                        </h1>
+
+                        <p class="hero-subtitle" data-i18n="hero_subtitle">Ми за 5-7 днів даємо вам дослідження, стратегію та план дій. Те, на що класична агенція витрачає місяць. Без зайвих слів.</p>
+
+                        <div class="hero-buttons">
+                            <a href="#audit" class="btn-primary" data-i18n="hero_cta_main">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                                <span>Безкоштовний міні-аудит</span>
+                            </a>
+                            <a href="#services" class="btn-outline" data-i18n="hero_cta_side">Переглянути послуги</a>
+                        </div>
+
+                        <div class="hero-micro">
+                            <span data-i18n="hero_micro">Працюємо з бізнесами в UA, PL, CZ</span>
+                            <span class="separator">•</span>
+                            <span data-i18n="hero_micro_price">Від $500</span>
+                            <span class="separator">•</span>
+                            <span data-i18n="hero_micro_response">Відповідаємо за 48 год</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual">
+                        <div class="floating-cards">
+                            <div class="float-card float-card-1">
+                                <div class="card-label" data-i18n="card_research">Research</div>
+                                <div class="card-value">$500</div>
+                                <div class="card-meta" data-i18n="card_meta_1">5-7 днів</div>
+                            </div>
+                            <div class="float-card float-card-2">
+                                <div class="card-label" data-i18n="card_strategy">Strategy</div>
+                                <div class="card-value">$1,500</div>
+                                <div class="card-meta" data-i18n="card_meta_2">10-14 днів</div>
+                            </div>
+                            <div class="float-card float-card-3">
+                                <div class="card-label" data-i18n="card_launch">Launch</div>
+                                <div class="card-value">$2,500</div>
+                                <div class="card-meta" data-i18n="card_meta_3">3-4 тижні</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOCIAL PROOF BAR -->
+        <section class="proof-bar">
+            <div class="container">
+                <div class="proof-grid">
+                    <div class="proof-item">
+                        <div class="proof-number"><span data-target="15">0</span><span class="suffix">+</span></div>
+                        <div class="proof-label" data-i18n="proof_projects">Проектів завершено</div>
+                    </div>
+                    <div class="proof-item">
+                        <div class="proof-number"><span data-target="48">0</span></div>
+                        <div class="proof-label" data-i18n="proof_response">Годин — середня відповідь</div>
+                    </div>
+                    <div class="proof-item">
+                        <div class="proof-number">$<span data-target="2">0</span><span class="suffix">M+</span></div>
+                        <div class="proof-label" data-i18n="proof_spend">Проаналізований ad spend</div>
+                    </div>
+                    <div class="proof-item">
+                        <div class="proof-number"><span data-target="5">0</span><span class="suffix">-7</span></div>
+                        <div class="proof-label" data-i18n="proof_delivery">Днів до результату</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="services">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="3" rx="1"></rect><rect width="7" height="7" x="14" y="14" rx="1"></rect><rect width="7" height="7" x="3" y="14" rx="1"></rect></svg>
+                        <span data-i18n="services_tag">Послуги</span>
+                    </div>
+                    <h2 class="section-title" data-i18n="services_title">Все, що потрібно для зростання бізнесу</h2>
+                    <p class="section-desc" data-i18n="services_desc">Кожна послуга — конкретний deliverable. Ви знаєте, що отримаєте.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card reveal" style="--i:1">
+                        <div class="service-icon blue">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+                        </div>
+                        <h3 data-i18n="service_1_title">Deep Research</h3>
+                        <p class="service-desc" data-i18n="service_1_desc">Глибокий аналіз ринку, конкурентів та аудиторії з реальними цифрами.</p>
+                        <div class="service-deliverable">
+                            <span class="del-label" data-i18n="service_deliverable">Ви отримаєте:</span>
+                            <p data-i18n="service_1_deliverable">PDF-звіт 20-35 стор. з цифрами, джерелами і SWOT</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="service-price">$500</span>
+                            <span class="service-time" data-i18n="service_1_time">5-7 днів</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card reveal" style="--i:2">
+                        <div class="service-icon gold">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                        </div>
+                        <h3 data-i18n="service_2_title">Marketing Strategy</h3>
+                        <p class="service-desc" data-i18n="service_2_desc">Медіа-план, воронка, unit economics і 30-денний план дій.</p>
+                        <div class="service-deliverable">
+                            <span class="del-label" data-i18n="service_deliverable">Ви отримаєте:</span>
+                            <p data-i18n="service_2_deliverable">Стратегічний документ 40-50 стор. + медіа-план + чеклісти</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="service-price">$1,500</span>
+                            <span class="service-time" data-i18n="service_2_time">10-14 днів</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card reveal" style="--i:3">
+                        <div class="service-icon coral">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path></svg>
+                        </div>
+                        <h3 data-i18n="service_3_title">GTM Launch</h3>
+                        <p class="service-desc" data-i18n="service_3_desc">Повний пакет для виходу на ринок: від дослідження до перших продажів.</p>
+                        <div class="service-deliverable">
+                            <span class="del-label" data-i18n="service_deliverable">Ви отримаєте:</span>
+                            <p data-i18n="service_3_deliverable">Launch Kit: стратегія + креативи + кампанії + 30 днів підтримки</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="service-price">$2,500</span>
+                            <span class="service-time" data-i18n="service_3_time">3-4 тижні</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card reveal" style="--i:4">
+                        <div class="service-icon green">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
+                        </div>
+                        <h3 data-i18n="service_4_title">Creative Pack</h3>
+                        <p class="service-desc" data-i18n="service_4_desc">Hooks, скрипти, ad copy та візуальний напрямок для продакшену.</p>
+                        <div class="service-deliverable">
+                            <span class="del-label" data-i18n="service_deliverable">Ви отримаєте:</span>
+                            <p data-i18n="service_4_deliverable">10 hooks + 5 скриптів + 20 ad copies + Visual Direction</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="service-price">$400</span>
+                            <span class="service-time" data-i18n="service_4_time">3-5 днів</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card reveal" style="--i:5">
+                        <div class="service-icon blue">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                        </div>
+                        <h3 data-i18n="service_5_title">Optimization</h3>
+                        <p class="service-desc" data-i18n="service_5_desc">Аудит поточної реклами, виявлення money leaks і план масштабування.</p>
+                        <div class="service-deliverable">
+                            <span class="del-label" data-i18n="service_deliverable">Ви отримаєте:</span>
+                            <p data-i18n="service_5_deliverable">Звіт з 10-15 рекомендаціями + scaling план</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="service-price">$800<span class="per">/міс</span></span>
+                            <span class="service-time" data-i18n="service_5_time">Щомісячно</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card reveal" style="--i:6">
+                        <div class="service-icon gold">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                        <h3 data-i18n="service_6_title">ICP Deep Profile</h3>
+                        <p class="service-desc" data-i18n="service_6_desc">Глибоке дослідження ідеального клієнта: 3-5 детальних Persona карт.</p>
+                        <div class="service-deliverable">
+                            <span class="del-label" data-i18n="service_deliverable">Ви отримаєте:</span>
+                            <p data-i18n="service_6_deliverable">3-5 Persona карт + Messaging Matrix + Customer Journey</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="service-price">$600</span>
+                            <span class="service-time" data-i18n="service_6_time">7-10 днів</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card reveal" style="--i:7">
+                        <div class="service-icon coral">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                        </div>
+                        <h3 data-i18n="service_7_title">Competitor Watch</h3>
+                        <p class="service-desc" data-i18n="service_7_desc">Щомісячний трекінг реклами і стратегій конкурентів у вашій ніші.</p>
+                        <div class="service-deliverable">
+                            <span class="del-label" data-i18n="service_deliverable">Ви отримаєте:</span>
+                            <p data-i18n="service_7_deliverable">Місячний дайджест 10-15 стор. + рекомендації</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="service-price">$300<span class="per">/міс</span></span>
+                            <span class="service-time" data-i18n="service_7_time">Щомісяця</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card reveal" style="--i:8">
+                        <div class="service-icon green">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                        </div>
+                        <h3 data-i18n="service_8_title">Funnel Audit</h3>
+                        <p class="service-desc" data-i18n="service_8_desc">Знаходимо де воронка втрачає гроші. 15+ конкретних рекомендацій.</p>
+                        <div class="service-deliverable">
+                            <span class="del-label" data-i18n="service_deliverable">Ви отримаєте:</span>
+                            <p data-i18n="service_8_deliverable">Звіт з friction points + 15 рекомендацій з пріоритетами</p>
+                        </div>
+                        <div class="service-meta">
+                            <span class="service-price">$700</span>
+                            <span class="service-time" data-i18n="service_8_time">5-7 днів</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PACKAGES -->
+        <section id="packages" class="packages">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                        <span data-i18n="pricing_tag">Пакети</span>
+                    </div>
+                    <h2 class="section-title" data-i18n="pricing_title">Оберіть свій пакет</h2>
+                    <p class="section-desc" data-i18n="pricing_desc">Все чітко. Всі ціни фіксовані. Ніяких сюрпризів.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <div class="pricing-card reveal" style="--i:1">
+                        <h3 data-i18n="package_1_name">RESEARCH</h3>
+                        <div class="price">$500</div>
+                        <div class="duration" data-i18n="package_duration_1">5-7 днів доставки</div>
+                        <ul class="pricing-features">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_1_f1">Аналіз ринку</span></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_1_f2">Аналіз конкурентів</span></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_1_f3">Аналіз аудиторії</span></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_1_f4">Канали + CPM</span></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_1_f5">SWOT аналіз</span></li>
+                        </ul>
+                        <a href="#audit" class="btn-outline" data-i18n="btn_contact">Замовити</a>
+                    </div>
+
+                    <div class="pricing-card featured reveal" style="--i:2">
+                        <div class="pricing-badge" data-i18n="badge_popular">ПОПУЛЯРНИЙ</div>
+                        <h3 data-i18n="package_2_name">STRATEGY</h3>
+                        <div class="price">$1,500</div>
+                        <div class="duration" data-i18n="package_duration_2">10-14 днів доставки</div>
+                        <ul class="pricing-features">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_2_f1">Все з Research</span></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_2_f2">Маркетингова стратегія</span></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_2_f3">Медіа-план</span></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_2_f4">Unit Economics</span></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_2_f5">30-денний план дій</span></li>
+                        </ul>
+                        <a href="#audit" class="btn-primary" data-i18n="btn_contact">Замовити</a>
+                    </div>
+
+                    <div class="pricing-card reveal" style="--i:3">
+                        <div class="pricing-badge" data-i18n="badge_best">НАЙКРАЩИЙ</div>
+                        <h3 data-i18n="package_3_name">LAUNCH</h3>
+                        <div class="price">$2,500</div>
+                        <div class="duration" data-i18n="package_duration_3">3-4 тижні доставки</div>
+                        <ul class="pricing-features">
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_3_f1">Все зі Strategy</span></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_3_f2">Креативний пакет</span></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_3_f3">Структура кампаній</span></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_3_f4">Трекінг чекліст</span></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_3_f5">30 днів підтримки</span></li>
+                        </ul>
+                        <a href="#audit" class="btn-outline" data-i18n="btn_contact">Замовити</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROCESS -->
+        <section id="process" class="process">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+                        <span data-i18n="process_tag">Процес</span>
+                    </div>
+                    <h2 class="section-title" data-i18n="process_title">Як ми працюємо</h2>
+                    <p class="section-desc" data-i18n="process_desc">Від брифу до готового deliverable — всього 4 кроки</p>
+                </div>
+
+                <div class="process-steps">
+                    <div class="process-step reveal" style="--i:1">
+                        <div class="step-number">01</div>
+                        <h3 data-i18n="process_1_title">Бриф</h3>
+                        <p data-i18n="process_1_desc">30-хвилинний дзвінок або листування. Розуміємо ваш бізнес і цілі.</p>
+                        <div class="step-duration" data-i18n="process_1_duration">Безкоштовно</div>
+                    </div>
+                    <div class="process-step reveal" style="--i:2">
+                        <div class="step-number">02</div>
+                        <h3 data-i18n="process_2_title">Дослідження</h3>
+                        <p data-i18n="process_2_desc">Наша AI-система аналізує 50+ джерел даних по вашій ніші.</p>
+                        <div class="step-duration" data-i18n="process_2_duration">3-7 днів</div>
+                    </div>
+                    <div class="process-step reveal" style="--i:3">
+                        <div class="step-number">03</div>
+                        <h3 data-i18n="process_3_title">Deliverable</h3>
+                        <p data-i18n="process_3_desc">Отримуєте готовий документ: стратегія, медіа-план, креативи.</p>
+                        <div class="step-duration" data-i18n="process_3_duration">PDF + Таблиці</div>
+                    </div>
+                    <div class="process-step reveal" style="--i:4">
+                        <div class="step-number">04</div>
+                        <h3 data-i18n="process_4_title">Підтримка</h3>
+                        <p data-i18n="process_4_desc">Допомагаємо впровадити, відповідаємо на питання.</p>
+                        <div class="step-duration" data-i18n="process_4_duration">Опційно</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ECOSYSTEM -->
+        <section id="ecosystem" class="ecosystem">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                        <span data-i18n="ecosystem_tag">Екосистема</span>
+                    </div>
+                    <h2 class="section-title" data-i18n="ecosystem_title">Частина екосистеми MA3</h2>
+                    <p class="section-desc" data-i18n="ecosystem_desc">Ми — одна з трьох агенцій. Обирайте ту, що підходить вашому бізнесу.</p>
+                </div>
+
+                <div class="ecosystem-grid">
+                    <a href="https://ma-3-rose.vercel.app" target="_blank" class="agency-card reveal" style="--i:1">
+                        <div class="agency-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+                        </div>
+                        <h3>MA3 Agency 3.0</h3>
+                        <p data-i18n="agency_main_desc">Головна сторінка всіх трьох агенцій</p>
+                        <span class="agency-link">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            ma-3-rose.vercel.app
+                        </span>
+                    </a>
+
+                    <div class="agency-card reveal" style="--i:2">
+                        <div class="agency-icon digital">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+                        </div>
+                        <h3 data-i18n="agency_digital_title">Digital & Startups Agency</h3>
+                        <p data-i18n="agency_digital_desc">Технології, інновації, масштабування</p>
+                        <span class="agency-soon" data-i18n="agency_soon">Скоро</span>
+                    </div>
+
+                    <div class="agency-card reveal" style="--i:3">
+                        <div class="agency-icon ethic">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+                        </div>
+                        <h3 data-i18n="agency_ethic_title">Ethic & Conscious Agency</h3>
+                        <p data-i18n="agency_ethic_desc">Ідейність, етика, гармонія</p>
+                        <span class="agency-soon" data-i18n="agency_soon">Скоро</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LEAD FORM -->
+        <section id="audit" class="lead-magnet">
+            <div class="container">
+                <div class="lead-wrapper">
+                    <div class="lead-content reveal">
+                        <h2 data-i18n="form_title">Безкоштовний Міні-Аудит</h2>
+                        <p data-i18n="form_subtitle">За 48 годин ми зробимо експрес-аналіз вашого проєкту і покажемо 3 головних точки росту.</p>
+
+                        <div class="trust-row">
+                            <div class="trust-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span data-i18n="trust_1">Без зобов'язань</span>
+                            </div>
+                            <div class="trust-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span data-i18n="trust_2">Відповідь за 48 год</span>
+                            </div>
+                            <div class="trust-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                <span data-i18n="trust_3">Реальні дані</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="lead-form-card reveal" style="--i:2">
+                        <form id="auditForm" onsubmit="handleFormSubmit(event)">
+                            <div class="form-group">
+                                <label data-i18n="form_website_label">Ваш сайт або продукт</label>
+                                <input type="text" name="website" placeholder="https://example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label data-i18n="form_niche_label">Ваша ніша</label>
+                                <select name="niche" required>
+                                    <option value="" data-i18n="form_niche_select">Оберіть нішу</option>
+                                    <option value="ecommerce">E-commerce</option>
+                                    <option value="saas">SaaS</option>
+                                    <option value="mobile">Мобільний додаток</option>
+                                    <option value="community">Community / Social</option>
+                                    <option value="service">Сервісний бізнес</option>
+                                    <option value="other">Інше</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label data-i18n="form_email_label">Email для результатів</label>
+                                <input type="email" name="email" placeholder="your@email.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label data-i18n="form_telegram_label">Telegram (опційно)</label>
+                                <input type="text" name="telegram" placeholder="@yourhandle">
+                            </div>
+
+                            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center;">
+                                <span data-i18n="btn_audit_submit">Отримати безкоштовний аудит</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                            </button>
+
+                            <div class="form-note">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
+                                <span data-i18n="form_note">Без зобов'язань. Відповідаємо за 48 годин.</span>
+                            </div>
+                        </form>
+
+                        <div class="form-success" id="formSuccess">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            <strong data-i18n="form_success">Дякуємо! Відповімо за 48 годин.</strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <div class="section-header reveal">
+                    <div class="section-tag">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><path d="M12 17h.01"></path></svg>
+                        <span data-i18n="faq_tag">FAQ</span>
+                    </div>
+                    <h2 class="section-title" data-i18n="faq_title">Часті запитання</h2>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item reveal" style="--i:1">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3 data-i18n="faq_q1">Скільки часу займає дослідження?</h3>
+                            <div class="faq-toggle"></div>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq_a1">Research Pack — 5-7 робочих днів. Strategy Pack — 10-14 днів. Launch Pack — 3-4 тижні. Ми завжди озвучуємо точні дедлайни перед початком.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal" style="--i:2">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3 data-i18n="faq_q2">Що я отримаю в результаті?</h3>
+                            <div class="faq-toggle"></div>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq_a2">Конкретний документ (PDF + таблиці) з реальними даними, цифрами і рекомендаціями. Не абстрактні поради, а чіткий план дій.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal" style="--i:3">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3 data-i18n="faq_q3">Як ви можете робити це так швидко?</h3>
+                            <div class="faq-toggle"></div>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq_a3">Ми використовуємо AI-технології нового покоління, що дозволяють за 5-7 днів зробити роботу, на яку агенція витрачає 4-6 тижнів.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal" style="--i:4">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3 data-i18n="faq_q4">А що якщо мені не сподобається результат?</h3>
+                            <div class="faq-toggle"></div>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq_a4">Ми показуємо проміжні результати на кожному етапі. Фінальний документ включає 1 раунд правок для повного задоволення.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal" style="--i:5">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3 data-i18n="faq_q5">Чи працюєте ви з маленькими бюджетами?</h3>
+                            <div class="faq-toggle"></div>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq_a5">Так. Ми створили пакети від $500, доступні для стартапів. Великий бюджет не потрібен — потрібна правильна стратегія.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal" style="--i:6">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3 data-i18n="faq_q6">В яких нішах ви маєте досвід?</h3>
+                            <div class="faq-toggle"></div>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq_a6">E-commerce, SaaS, мобільні додатки, сервісні бізнеси. Географія: Україна, Польща, Чехія. Наша методологія працює для будь-якої ніші.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal" style="--i:7">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3 data-i18n="faq_q7">Чи можна замовити тільки одну послугу?</h3>
+                            <div class="faq-toggle"></div>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq_a7">Абсолютно. Кожна послуга працює самостійно. Рекомендуємо починати з Research — це фундамент для всього іншого.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item reveal" style="--i:8">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h3 data-i18n="faq_q8">Як почати співпрацю?</h3>
+                            <div class="faq-toggle"></div>
+                        </div>
+                        <div class="faq-answer">
+                            <p data-i18n="faq_a8">Залиште заявку на безкоштовний міні-аудит. Ми проведемо 30-хвилинний бриф і запропонуємо оптимальний план.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid reveal">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-main">STRAIGHTFORWARD</span>
+                        <span class="logo-sub">AGENCY</span>
+                    </a>
+                    <p data-i18n="footer_desc">Перетворюємо бізнес-задачі на чіткі рішення без зайвих слів.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer_nav">Навігація</h4>
+                    <ul>
+                        <li><a href="#services" data-i18n="nav_services">Послуги</a></li>
+                        <li><a href="#packages" data-i18n="nav_packages">Пакети</a></li>
+                        <li><a href="#process" data-i18n="nav_process">Процес</a></li>
+                        <li><a href="#ecosystem" data-i18n="nav_ecosystem">Екосистема агенцій</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer_services">Послуги</h4>
+                    <ul>
+                        <li><a href="#services">Deep Research</a></li>
+                        <li><a href="#services">Marketing Strategy</a></li>
+                        <li><a href="#services">Creative Pack</a></li>
+                        <li><a href="#services">Optimization</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer_contact">Контакти</h4>
+                    <ul>
+                        <li><a href="https://t.me/andrisav" target="_blank">Telegram</a></li>
+                        <li><a href="mailto:hello@straightforward.agency">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 STRAIGHTFORWARD AGENCY</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY MOBILE CTA -->
+    <div class="sticky-mobile-cta" id="stickyCta">
+        <a href="#audit" class="sticky-cta-btn" data-i18n="hero_cta_main">Безкоштовний міні-аудит</a>
+    </div>
+
+    <script src="js/telegram-bot.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
