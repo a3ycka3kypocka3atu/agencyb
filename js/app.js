@@ -11,16 +11,19 @@ const translations = {
         nav_ecosystem: "Екосистема агенцій",
         nav_faq: "FAQ",
         nav_cta: "Безкоштовний аудит",
+        theme_dark: "Темна",
+        theme_light: "Світла",
+        theme_toggle_aria: "Перемкнути світлу або темну тему",
 
         hero_badge: "Перетворюємо бізнес-задачі на чіткі рішення",
         hero_title_1: "Глибокий аналіз ринку",
         hero_title_2: "з конкретними цифрами",
         hero_title_3: "та планом дій",
-        hero_subtitle: "Ми за 5-7 днів даємо вам дослідження, стратегію та план дій. Те, на що класична агенція витрачає місяць. Без зайвих слів.",
+        hero_subtitle: "Ми — команда спеціалістів, яка будує сильний новий agency brand через практичні рішення, чесну комунікацію і довгострокові партнерства.",
         hero_cta_main: "Безкоштовний міні-аудит",
         hero_cta_side: "Переглянути послуги",
         hero_micro: "Працюємо з бізнесами в UA, PL, CZ",
-        hero_micro_price: "Від $500",
+        hero_micro_price: "Early pricing від 150€",
         hero_micro_response: "Відповідаємо за 48 год",
 
         card_research: "Research",
@@ -30,62 +33,89 @@ const translations = {
         card_launch: "Launch",
         card_meta_3: "3-4 тижні",
 
-        proof_projects: "Проектів завершено",
-        proof_response: "Годин — середня відповідь",
-        proof_spend: "Проаналізований ad spend",
-        proof_delivery: "Днів до результату",
+        proof_projects: "Практичний підхід",
+        proof_response: "Швидка комунікація",
+        proof_spend: "Гнучкі рішення",
+        proof_delivery: "Зростаюча екосистема",
+
+        positioning_title: "Практичні системи для бізнесів, яким потрібен результат",
+        positioning_desc: "Ми будуємо сильний новий agency brand через якісну роботу, чесну комунікацію і довгострокові партнерства.",
+        positioning_1_title: "Real Execution",
+        positioning_1_desc: "Фокус на практичному впровадженні, а не на презентаційних стратегіях без дії.",
+        positioning_2_title: "Long-Term Partnerships",
+        positioning_2_desc: "Ми шукаємо клієнтів, з якими можна рости разом і будувати сильні публічні кейси.",
+        positioning_3_title: "Modern Technologies",
+        positioning_3_desc: "Швидкі modern stacks, automation systems, AI workflows і масштабовані рішення.",
+        positioning_4_title: "Flexible Early Pricing",
+        positioning_4_desc: "Поточні ціни нижчі за ринок, бо ми формуємо перші сильні кейси і партнерську екосистему.",
 
         services_tag: "Послуги",
-        services_title: "Все, що потрібно для зростання бізнесу",
-        services_desc: "Кожна послуга — конкретний deliverable. Ви знаєте, що отримаєте.",
+        services_title: "Практичні послуги за early-partner pricing",
+        services_desc: "Ми даємо сильну ціну зараз, щоб створити якісні кейси, довгі партнерства і репутацію через результат.",
 
         service_deliverable: "Ви отримаєте:",
+        service_badge: "ЦІНА ДЛЯ ПЕРШИХ КЛІЄНТІВ",
+        service_current_label: "Поточна ціна",
+        service_market_label: "Ринкова ціна",
         service_1_title: "Deep Research",
         service_1_desc: "Глибокий аналіз ринку, конкурентів та аудиторії з реальними цифрами.",
         service_1_deliverable: "PDF-звіт 20-35 стор. з цифрами, джерелами і SWOT",
         service_1_time: "5-7 днів",
+        service_1_care: "+ 10–14 днів супроводу після здачі",
 
         service_2_title: "Marketing Strategy",
         service_2_desc: "Медіа-план, воронка, unit economics і 30-денний план дій.",
         service_2_deliverable: "Стратегічний документ 40-50 стор. + медіа-план + чеклісти",
         service_2_time: "10-14 днів",
+        service_2_care: "+ 21–30 днів супроводу після здачі",
 
         service_3_title: "GTM Launch",
         service_3_desc: "Повний пакет для виходу на ринок: від дослідження до перших продажів.",
         service_3_deliverable: "Launch Kit: стратегія + креативи + кампанії + 30 днів підтримки",
         service_3_time: "3-4 тижні",
+        service_3_care: "+ 45–60 днів супроводу запуску",
 
         service_4_title: "Creative Pack",
         service_4_desc: "Hooks, скрипти, ad copy та візуальний напрямок для продакшену.",
         service_4_deliverable: "10 hooks + 5 скриптів + 20 ad copies + Visual Direction",
         service_4_time: "3-5 днів",
+        service_4_care: "+ 10–14 днів правок і супроводу",
 
         service_5_title: "Optimization",
         service_5_desc: "Аудит поточної реклами, виявлення money leaks і план масштабування.",
         service_5_deliverable: "Звіт з 10-15 рекомендаціями + scaling план",
         service_5_time: "Щомісячно",
+        service_5_care: "Партнерський супровід протягом місяця",
 
         service_6_title: "ICP Deep Profile",
         service_6_desc: "Глибоке дослідження ідеального клієнта: 3-5 детальних Persona карт.",
         service_6_deliverable: "3-5 Persona карт + Messaging Matrix + Customer Journey",
         service_6_time: "7-10 днів",
+        service_6_care: "+ 14–21 день уточнень і супроводу",
 
         service_7_title: "Competitor Watch",
         service_7_desc: "Щомісячний трекінг реклами і стратегій конкурентів у вашій ніші.",
         service_7_deliverable: "Місячний дайджест 10-15 стор. + рекомендації",
         service_7_time: "Щомісяця",
+        service_7_care: "Щомісячний супровід і короткі рекомендації",
 
         service_8_title: "Funnel Audit",
         service_8_desc: "Знаходимо де воронка втрачає гроші. 15+ конкретних рекомендацій.",
         service_8_deliverable: "Звіт з friction points + 15 рекомендацій з пріоритетами",
         service_8_time: "5-7 днів",
+        service_8_care: "+ 14–21 день супроводу впровадження",
+
+        modal_care_label: "Супровід після здачі",
+        modal_why_title: "Чому ціна нижча?",
+        modal_why_text: "Наші спеціалісти вже працюють у development, automation, marketing і product systems, а зараз ми активно будуємо agency brand, сильні публічні кейси та довгострокову бізнес-екосистему. Тому поточні ціни навмисно нижчі за стандартний agency market pricing: ранні партнери отримують якісне виконання, більше уваги і нижчий entry cost без відчуття cheap labor.",
+        modal_cta: "Обговорити послугу",
 
         pricing_tag: "Пакети",
-        pricing_title: "Оберіть свій пакет",
-        pricing_desc: "Все чітко. Всі ціни фіксовані. Ніяких сюрпризів.",
+        pricing_title: "Early Partner Packages",
+        pricing_desc: "Прозорі пакети для бізнесів, які хочуть сильний результат зараз і партнерство на довшу дистанцію.",
 
         package_1_name: "RESEARCH",
-        package_duration_1: "5-7 днів доставки",
+        package_duration_1: "5-7 днів + 10-14 днів супроводу",
         package_1_f1: "Аналіз ринку",
         package_1_f2: "Аналіз конкурентів",
         package_1_f3: "Аналіз аудиторії",
@@ -93,7 +123,7 @@ const translations = {
         package_1_f5: "SWOT аналіз",
 
         package_2_name: "STRATEGY",
-        package_duration_2: "10-14 днів доставки",
+        package_duration_2: "10-14 днів + 21-30 днів супроводу",
         package_2_f1: "Все з Research",
         package_2_f2: "Маркетингова стратегія",
         package_2_f3: "Медіа-план",
@@ -101,7 +131,7 @@ const translations = {
         package_2_f5: "30-денний план дій",
 
         package_3_name: "LAUNCH",
-        package_duration_3: "3-4 тижні доставки",
+        package_duration_3: "3-4 тижні + 45-60 днів супроводу",
         package_3_f1: "Все зі Strategy",
         package_3_f2: "Креативний пакет",
         package_3_f3: "Структура кампаній",
@@ -174,8 +204,8 @@ const translations = {
         faq_q4: "А що якщо мені не сподобається результат?",
         faq_a4: "Ми показуємо проміжні результати на кожному етапі. Фінальний документ включає 1 раунд правок для повного задоволення.",
 
-        faq_q5: "Чи працюєте ви з маленькими бюджетами?",
-        faq_a5: "Так. Ми створили пакети від $500, доступні для стартапів. Великий бюджет не потрібен — потрібна правильна стратегія.",
+        faq_q5: "Чому зараз ціни нижчі за ринок?",
+        faq_a5: "Ми будуємо новий agency brand і хочемо створити сильні публічні кейси з хорошими партнерами. Це не про дешеву роботу, а про early-client pricing: клієнт отримує якісне виконання і більше уваги за нижчий entry cost.",
 
         faq_q6: "В яких нішах ви маєте досвід?",
         faq_a6: "E-commerce, SaaS, мобільні додатки, сервісні бізнеси. Географія: Україна, Польща, Чехія. Наша методологія працює для будь-якої ніші.",
@@ -199,16 +229,19 @@ const translations = {
         nav_ecosystem: "Экосистема агентств",
         nav_faq: "FAQ",
         nav_cta: "Бесплатный аудит",
+        theme_dark: "Тёмная",
+        theme_light: "Светлая",
+        theme_toggle_aria: "Переключить светлую или тёмную тему",
 
         hero_badge: "Превращаем бизнес-задачи в чёткие решения",
         hero_title_1: "Глубокий анализ рынка",
         hero_title_2: "с конкретными цифрами",
         hero_title_3: "и планом действий",
-        hero_subtitle: "За 5-7 дней мы предоставляем вам исследование, стратегию и план действий. То, на что классическое агентство тратит месяц. Без лишних слов.",
+        hero_subtitle: "Мы — команда специалистов, которая строит сильный новый agency brand через практичные решения, честную коммуникацию и долгосрочные партнёрства.",
         hero_cta_main: "Бесплатный мини-аудит",
         hero_cta_side: "Посмотреть услуги",
         hero_micro: "Работаем с бизнесами в UA, PL, CZ",
-        hero_micro_price: "От $500",
+        hero_micro_price: "Early pricing от 150€",
         hero_micro_response: "Ответ за 48 ч",
 
         card_research: "Research",
@@ -218,62 +251,89 @@ const translations = {
         card_launch: "Launch",
         card_meta_3: "3-4 недели",
 
-        proof_projects: "Проектов завершено",
-        proof_response: "Часов — средний ответ",
-        proof_spend: "Проанализированный ad spend",
-        proof_delivery: "Дней до результата",
+        proof_projects: "Практичный подход",
+        proof_response: "Быстрая коммуникация",
+        proof_spend: "Гибкие решения",
+        proof_delivery: "Растущая экосистема",
+
+        positioning_title: "Практичные системы для бизнесов, которым нужен результат",
+        positioning_desc: "Мы строим сильный новый agency brand через качественную работу, честную коммуникацию и долгосрочные партнёрства.",
+        positioning_1_title: "Real Execution",
+        positioning_1_desc: "Фокус на практическом внедрении, а не на презентационных стратегиях без действия.",
+        positioning_2_title: "Long-Term Partnerships",
+        positioning_2_desc: "Мы ищем клиентов, с которыми можно расти вместе и строить сильные публичные кейсы.",
+        positioning_3_title: "Modern Technologies",
+        positioning_3_desc: "Быстрые modern stacks, automation systems, AI workflows и масштабируемые решения.",
+        positioning_4_title: "Flexible Early Pricing",
+        positioning_4_desc: "Текущие цены ниже рынка, потому что мы формируем первые сильные кейсы и партнёрскую экосистему.",
 
         services_tag: "Услуги",
-        services_title: "Всё, что нужно для роста бизнеса",
-        services_desc: "Каждая услуга — конкретный deliverable. Вы знаете, что получите.",
+        services_title: "Практичные услуги по early-partner pricing",
+        services_desc: "Сейчас мы даём сильную цену, чтобы создавать качественные кейсы, долгие партнёрства и репутацию через результат.",
 
         service_deliverable: "Вы получите:",
+        service_badge: "ЦЕНА ДЛЯ ПЕРВЫХ КЛИЕНТОВ",
+        service_current_label: "Текущая цена",
+        service_market_label: "Рыночная цена",
         service_1_title: "Deep Research",
         service_1_desc: "Глубокий анализ рынка, конкурентов и аудитории с реальными цифрами.",
         service_1_deliverable: "PDF-отчёт 20-35 стр. с цифрами, источниками и SWOT",
         service_1_time: "5-7 дней",
+        service_1_care: "+ 10–14 дней сопровождения после сдачи",
 
         service_2_title: "Marketing Strategy",
         service_2_desc: "Медиа-план, воронка, unit economics и 30-дневный план действий.",
         service_2_deliverable: "Стратегический документ 40-50 стр. + медиа-план + чек-листы",
         service_2_time: "10-14 дней",
+        service_2_care: "+ 21–30 дней сопровождения после сдачи",
 
         service_3_title: "GTM Launch",
         service_3_desc: "Полный пакет для выхода на рынок: от исследования до первых продаж.",
         service_3_deliverable: "Launch Kit: стратегия + креативы + кампании + 30 дней поддержки",
         service_3_time: "3-4 недели",
+        service_3_care: "+ 45–60 дней сопровождения запуска",
 
         service_4_title: "Creative Pack",
         service_4_desc: "Хуки, скрипты, ad copy и визуальное направление для продакшена.",
         service_4_deliverable: "10 хуков + 5 скриптов + 20 ad copies + Visual Direction",
         service_4_time: "3-5 дней",
+        service_4_care: "+ 10–14 дней правок и сопровождения",
 
         service_5_title: "Optimization",
         service_5_desc: "Аудит текущей рекламы, выявление money leaks и план масштабирования.",
         service_5_deliverable: "Отчёт с 10-15 рекомендациями + план масштабирования",
         service_5_time: "Ежемесячно",
+        service_5_care: "Партнёрское сопровождение в течение месяца",
 
         service_6_title: "ICP Deep Profile",
         service_6_desc: "Глубокое исследование идеального клиента: 3-5 детальных Persona карт.",
         service_6_deliverable: "3-5 Persona карт + Messaging Matrix + Customer Journey",
         service_6_time: "7-10 дней",
+        service_6_care: "+ 14–21 день уточнений и сопровождения",
 
         service_7_title: "Competitor Watch",
         service_7_desc: "Ежемесячное отслеживание рекламы и стратегий конкурентов в вашей нише.",
         service_7_deliverable: "Месячный дайджест 10-15 стр. + рекомендации",
         service_7_time: "Ежемесячно",
+        service_7_care: "Ежемесячное сопровождение и короткие рекомендации",
 
         service_8_title: "Funnel Audit",
         service_8_desc: "Находим, где воронка теряет деньги. 15+ конкретных рекомендаций.",
         service_8_deliverable: "Отчёт с friction points + 15 рекомендаций с приоритетами",
         service_8_time: "5-7 дней",
+        service_8_care: "+ 14–21 день сопровождения внедрения",
+
+        modal_care_label: "Сопровождение после сдачи",
+        modal_why_title: "Почему цена ниже?",
+        modal_why_text: "Наши специалисты уже работают в development, automation, marketing и product systems, а сейчас мы активно строим agency brand, сильные публичные кейсы и долгосрочную бизнес-экосистему. Поэтому текущие цены намеренно ниже стандартного agency market pricing: ранние партнёры получают качественное выполнение, больше внимания и более низкий entry cost без ощущения cheap labor.",
+        modal_cta: "Обсудить услугу",
 
         pricing_tag: "Пакеты",
-        pricing_title: "Выберите свой пакет",
-        pricing_desc: "Всё чётко. Все цены фиксированы. Никаких сюрпризов.",
+        pricing_title: "Early Partner Packages",
+        pricing_desc: "Прозрачные пакеты для бизнесов, которые хотят сильный результат сейчас и партнёрство на длинной дистанции.",
 
         package_1_name: "RESEARCH",
-        package_duration_1: "5-7 дней доставки",
+        package_duration_1: "5-7 дней + 10-14 дней сопровождения",
         package_1_f1: "Анализ рынка",
         package_1_f2: "Анализ конкурентов",
         package_1_f3: "Анализ аудитории",
@@ -281,7 +341,7 @@ const translations = {
         package_1_f5: "SWOT анализ",
 
         package_2_name: "STRATEGY",
-        package_duration_2: "10-14 дней доставки",
+        package_duration_2: "10-14 дней + 21-30 дней сопровождения",
         package_2_f1: "Всё из Research",
         package_2_f2: "Маркетинговая стратегия",
         package_2_f3: "Медиа-план",
@@ -289,7 +349,7 @@ const translations = {
         package_2_f5: "30-дневный план действий",
 
         package_3_name: "LAUNCH",
-        package_duration_3: "3-4 недели доставки",
+        package_duration_3: "3-4 недели + 45-60 дней сопровождения",
         package_3_f1: "Всё из Strategy",
         package_3_f2: "Креативный пакет",
         package_3_f3: "Структура кампаний",
@@ -362,8 +422,8 @@ const translations = {
         faq_q4: "А что если мне не понравится результат?",
         faq_a4: "Мы показываем промежуточные результаты на каждом этапе. Финальный документ включает 1 раунд правок для полного удовлетворения.",
 
-        faq_q5: "Работаете ли вы с маленькими бюджетами?",
-        faq_a5: "Да. Мы создали пакеты от $500, доступные для стартапов. Большой бюджет не нужен — нужна правильная стратегия.",
+        faq_q5: "Почему сейчас цены ниже рынка?",
+        faq_a5: "Мы строим новый agency brand и хотим создать сильные публичные кейсы с хорошими партнёрами. Это не про дешёвую работу, а про early-client pricing: клиент получает качественное выполнение и больше внимания за более низкий entry cost.",
 
         faq_q6: "В каких нишах у вас есть опыт?",
         faq_a6: "E-commerce, SaaS, мобильные приложения, сервисные бизнесы. География: Украина, Польша, Чехия. Наша методология работает для любой ниши.",
@@ -387,16 +447,19 @@ const translations = {
         nav_ecosystem: "Agency Ecosystem",
         nav_faq: "FAQ",
         nav_cta: "Free Audit",
+        theme_dark: "Dark",
+        theme_light: "Light",
+        theme_toggle_aria: "Switch light or dark theme",
 
         hero_badge: "Transforming business tasks into clear solutions",
         hero_title_1: "Deep market analysis",
         hero_title_2: "with concrete numbers",
         hero_title_3: "and an action plan",
-        hero_subtitle: "We deliver research, strategy, and action plan in 5-7 days. What a classic agency spends a month on. No fluff.",
+        hero_subtitle: "We are experienced specialists building a strong new agency brand through practical systems, honest communication, and long-term partnerships.",
         hero_cta_main: "Free Mini-Audit",
         hero_cta_side: "View Services",
         hero_micro: "Working with businesses in UA, PL, CZ",
-        hero_micro_price: "From $500",
+        hero_micro_price: "Early pricing from 150€",
         hero_micro_response: "48hr response",
 
         card_research: "Research",
@@ -406,62 +469,89 @@ const translations = {
         card_launch: "Launch",
         card_meta_3: "3-4 weeks",
 
-        proof_projects: "Projects completed",
-        proof_response: "Hours avg. response",
-        proof_spend: "Ad spend analyzed",
-        proof_delivery: "Days to result",
+        proof_projects: "Practical approach",
+        proof_response: "Fast communication",
+        proof_spend: "Flexible solutions",
+        proof_delivery: "Growing ecosystem",
+
+        positioning_title: "Practical systems for businesses that want results",
+        positioning_desc: "We are building a strong new agency brand through quality execution, transparent communication, and long-term client partnerships.",
+        positioning_1_title: "Real Execution",
+        positioning_1_desc: "We focus on practical implementation, not presentation-only strategies.",
+        positioning_2_title: "Long-Term Partnerships",
+        positioning_2_desc: "We want clients we can grow with while building strong public case studies together.",
+        positioning_3_title: "Modern Technologies",
+        positioning_3_desc: "Fast modern stacks, automation systems, AI workflows, and scalable solutions.",
+        positioning_4_title: "Flexible Early Pricing",
+        positioning_4_desc: "Current pricing is intentionally lower while we build strong case studies and a partner ecosystem.",
 
         services_tag: "Services",
-        services_title: "Everything you need to grow your business",
-        services_desc: "Each service is a concrete deliverable. You know what you'll get.",
+        services_title: "Practical services with early-partner pricing",
+        services_desc: "We offer stronger pricing now to build quality cases, long-term partnerships, and reputation through real results.",
 
         service_deliverable: "You'll get:",
+        service_badge: "EARLY CLIENT PRICING",
+        service_current_label: "Current price",
+        service_market_label: "Market price",
         service_1_title: "Deep Research",
         service_1_desc: "In-depth analysis of market, competitors, and audience with real numbers.",
         service_1_deliverable: "PDF report 20-35 pages with numbers, sources, and SWOT",
         service_1_time: "5-7 days",
+        service_1_care: "+ 10–14 days of follow-up care",
 
         service_2_title: "Marketing Strategy",
         service_2_desc: "Media plan, funnel, unit economics, and 30-day action plan.",
         service_2_deliverable: "Strategy document 40-50 pages + media plan + checklists",
         service_2_time: "10-14 days",
+        service_2_care: "+ 21–30 days of follow-up care",
 
         service_3_title: "GTM Launch",
         service_3_desc: "Full package for market entry: from research to first sales.",
         service_3_deliverable: "Launch Kit: strategy + creatives + campaigns + 30 days support",
         service_3_time: "3-4 weeks",
+        service_3_care: "+ 45–60 days of launch support",
 
         service_4_title: "Creative Pack",
         service_4_desc: "Hooks, scripts, ad copy, and visual direction for production.",
         service_4_deliverable: "10 hooks + 5 scripts + 20 ad copies + Visual Direction",
         service_4_time: "3-5 days",
+        service_4_care: "+ 10–14 days of edits and care",
 
         service_5_title: "Optimization",
         service_5_desc: "Audit of current ads, money leak detection, and scaling plan.",
         service_5_deliverable: "Report with 10-15 recommendations + scaling plan",
         service_5_time: "Monthly",
+        service_5_care: "Partner-level care throughout the month",
 
         service_6_title: "ICP Deep Profile",
         service_6_desc: "In-depth research of your ideal client: 3-5 detailed Persona cards.",
         service_6_deliverable: "3-5 Persona cards + Messaging Matrix + Customer Journey",
         service_6_time: "7-10 days",
+        service_6_care: "+ 14–21 days of refinement and care",
 
         service_7_title: "Competitor Watch",
         service_7_desc: "Monthly tracking of competitor ads and strategies in your niche.",
         service_7_deliverable: "Monthly digest 10-15 pages + recommendations",
         service_7_time: "Monthly",
+        service_7_care: "Monthly care and short recommendations",
 
         service_8_title: "Funnel Audit",
         service_8_desc: "Finding where your funnel loses money. 15+ specific recommendations.",
         service_8_deliverable: "Report with friction points + 15 prioritized recommendations",
         service_8_time: "5-7 days",
+        service_8_care: "+ 14–21 days of implementation support",
+
+        modal_care_label: "Care after delivery",
+        modal_why_title: "Why lower pricing?",
+        modal_why_text: "Our specialists already work across development, automation, marketing, and product systems, and we are now actively building the agency brand, strong public case studies, and a long-term business ecosystem. Because of this, current pricing is intentionally lower than standard agency market pricing. Early partners get high-quality execution, more attention, and a significantly reduced entry cost without the feel of cheap labor.",
+        modal_cta: "Discuss this service",
 
         pricing_tag: "Packages",
-        pricing_title: "Choose your package",
-        pricing_desc: "Everything is clear. All prices are fixed. No surprises.",
+        pricing_title: "Early Partner Packages",
+        pricing_desc: "Transparent packages for businesses that want a strong result now and a longer-term partnership.",
 
         package_1_name: "RESEARCH",
-        package_duration_1: "5-7 days delivery",
+        package_duration_1: "5-7 days + 10-14 days care",
         package_1_f1: "Market analysis",
         package_1_f2: "Competitor analysis",
         package_1_f3: "Audience analysis",
@@ -469,7 +559,7 @@ const translations = {
         package_1_f5: "SWOT analysis",
 
         package_2_name: "STRATEGY",
-        package_duration_2: "10-14 days delivery",
+        package_duration_2: "10-14 days + 21-30 days care",
         package_2_f1: "Everything from Research",
         package_2_f2: "Marketing strategy",
         package_2_f3: "Media plan",
@@ -477,7 +567,7 @@ const translations = {
         package_2_f5: "30-day action plan",
 
         package_3_name: "LAUNCH",
-        package_duration_3: "3-4 weeks delivery",
+        package_duration_3: "3-4 weeks + 45-60 days care",
         package_3_f1: "Everything from Strategy",
         package_3_f2: "Creative pack",
         package_3_f3: "Campaign structure",
@@ -550,8 +640,8 @@ const translations = {
         faq_q4: "What if I don't like the result?",
         faq_a4: "We show interim results at each stage. The final document includes 1 round of revisions for complete satisfaction.",
 
-        faq_q5: "Do you work with small budgets?",
-        faq_a5: "Yes. We've created packages from $500, accessible for startups. You don't need a big budget — you need the right strategy.",
+        faq_q5: "Why are prices lower right now?",
+        faq_a5: "We are building a new agency brand and want to create strong public cases with good partners. This is not cheap work. It is early-client pricing: clients receive high-quality execution and more attention at a lower entry cost.",
 
         faq_q6: "What niches do you have experience in?",
         faq_a6: "E-commerce, SaaS, mobile apps, service businesses. Geography: Ukraine, Poland, Czech Republic. Our methodology works for any niche.",
@@ -575,16 +665,19 @@ const translations = {
         nav_ecosystem: "Ekosystém agentur",
         nav_faq: "FAQ",
         nav_cta: "Bezplatný audit",
+        theme_dark: "Tmavá",
+        theme_light: "Světlá",
+        theme_toggle_aria: "Přepnout světlé nebo tmavé téma",
 
         hero_badge: "Přeměňujeme podnikatelské úkoly na jasná řešení",
         hero_title_1: "Hluboká analýza trhu",
         hero_title_2: "s konkrétními čísly",
         hero_title_3: "a akčním plánem",
-        hero_subtitle: "Za 5-7 dní vám dodáme výzkum, strategii a akční plán. To, na co klasická agentura spotřebuje měsíc. Bez zbytečných řečí.",
+        hero_subtitle: "Jsme tým specialistů, který buduje silný nový agency brand přes praktická řešení, férovou komunikaci a dlouhodobá partnerství.",
         hero_cta_main: "Bezplatný mini-audit",
         hero_cta_side: "Zobrazit služby",
         hero_micro: "Práce s podniky v UA, PL, CZ",
-        hero_micro_price: "Od $500",
+        hero_micro_price: "Early pricing od 150€",
         hero_micro_response: "Odpověď do 48 hod",
 
         card_research: "Research",
@@ -594,62 +687,89 @@ const translations = {
         card_launch: "Launch",
         card_meta_3: "3-4 týdny",
 
-        proof_projects: "Dokončených projektů",
-        proof_response: "Hodin průměrná odpověď",
-        proof_spend: "Analýza reklamního rozpočtu",
-        proof_delivery: "Dní do výsledku",
+        proof_projects: "Praktický přístup",
+        proof_response: "Rychlá komunikace",
+        proof_spend: "Flexibilní řešení",
+        proof_delivery: "Rostoucí ekosystém",
+
+        positioning_title: "Praktické systémy pro firmy, které chtějí výsledky",
+        positioning_desc: "Budujeme silný nový agency brand přes kvalitní práci, transparentní komunikaci a dlouhodobá klientská partnerství.",
+        positioning_1_title: "Real Execution",
+        positioning_1_desc: "Zaměřujeme se na praktickou implementaci, ne na strategie pouze do prezentace.",
+        positioning_2_title: "Long-Term Partnerships",
+        positioning_2_desc: "Hledáme klienty, se kterými můžeme růst a společně budovat silné veřejné case studies.",
+        positioning_3_title: "Modern Technologies",
+        positioning_3_desc: "Rychlé modern stacks, automation systems, AI workflows a škálovatelná řešení.",
+        positioning_4_title: "Flexible Early Pricing",
+        positioning_4_desc: "Současné ceny jsou záměrně nižší, zatímco budujeme silné case studies a partnerský ekosystém.",
 
         services_tag: "Služby",
-        services_title: "Vše, co potřebujete k růstu podnikání",
-        services_desc: "Každá služba je konkrétní deliverable. Víte, co dostanete.",
+        services_title: "Praktické služby s early-partner pricing",
+        services_desc: "Teď nabízíme silnější cenu, abychom budovali kvalitní cases, dlouhodobá partnerství a reputaci přes výsledky.",
 
         service_deliverable: "Získáte:",
+        service_badge: "CENA PRO PRVNÍ KLIENTY",
+        service_current_label: "Současná cena",
+        service_market_label: "Tržní cena",
         service_1_title: "Deep Research",
         service_1_desc: "Hluboká analýza trhu, konkurence a publika s reálnými čísly.",
         service_1_deliverable: "PDF zpráva 20-35 stran s čísly, zdroji a SWOT",
         service_1_time: "5-7 dní",
+        service_1_care: "+ 10–14 dní následné péče",
 
         service_2_title: "Marketing Strategy",
         service_2_desc: "Media plán, trychtýř, unit economics a 30denní akční plán.",
         service_2_deliverable: "Strategický dokument 40-50 stran + media plán + kontrolní seznamy",
         service_2_time: "10-14 dní",
+        service_2_care: "+ 21–30 dní následné péče",
 
         service_3_title: "GTM Launch",
         service_3_desc: "Kompletní balíček pro vstup na trh: od výzkumu po první prodeje.",
         service_3_deliverable: "Launch Kit: strategie + kreativy + kampaně + 30 dní podpory",
         service_3_time: "3-4 týdny",
+        service_3_care: "+ 45–60 dní podpory při launchi",
 
         service_4_title: "Creative Pack",
         service_4_desc: "Hooks, skripty, ad copy a vizuální směr pro produkci.",
         service_4_deliverable: "10 hooks + 5 skriptů + 20 ad copies + Visual Direction",
         service_4_time: "3-5 dní",
+        service_4_care: "+ 10–14 dní úprav a péče",
 
         service_5_title: "Optimalizace",
         service_5_desc: "Audit současné reklamy, detekce úniků peněz a plán škálování.",
         service_5_deliverable: "Zpráva s 10-15 doporučeními + plán škálování",
         service_5_time: "Měsíčně",
+        service_5_care: "Partnerská péče během celého měsíce",
 
         service_6_title: "ICP Deep Profile",
         service_6_desc: "Hluboký výzkum vašeho ideálního klienta: 3-5 detailních Persona karet.",
         service_6_deliverable: "3-5 Persona karet + Messaging Matrix + Customer Journey",
         service_6_time: "7-10 dní",
+        service_6_care: "+ 14–21 dní zpřesnění a péče",
 
         service_7_title: "Sledování konkurence",
         service_7_desc: "Měsíční sledování reklamy a strategií konkurence ve vašem oboru.",
         service_7_deliverable: "Měsíční digest 10-15 stran + doporučení",
         service_7_time: "Měsíčně",
+        service_7_care: "Měsíční péče a krátká doporučení",
 
         service_8_title: "Audit trychtýře",
         service_8_desc: "Najdeme, kde váš trychtýř ztrácí peníze. 15+ konkrétních doporučení.",
         service_8_deliverable: "Zpráva s friction points + 15 prioritizovaných doporučení",
         service_8_time: "5-7 dní",
+        service_8_care: "+ 14–21 dní podpory implementace",
+
+        modal_care_label: "Péče po dodání",
+        modal_why_title: "Proč je cena nižší?",
+        modal_why_text: "Naši specialisté už pracují v development, automation, marketing a product systems a nyní aktivně budujeme agency brand, silné veřejné case studies a dlouhodobý business ecosystem. Proto jsou současné ceny záměrně nižší než standardní agency market pricing: early partners získají kvalitní exekuci, více pozornosti a nižší entry cost bez pocitu cheap labor.",
+        modal_cta: "Probrat službu",
 
         pricing_tag: "Balíčky",
-        pricing_title: "Vyberte si svůj balíček",
-        pricing_desc: "Vše je jasné. Všechny ceny jsou fixní. Žádná překvapení.",
+        pricing_title: "Early Partner Packages",
+        pricing_desc: "Transparentní balíčky pro firmy, které chtějí silný výsledek nyní a dlouhodobější partnerství.",
 
         package_1_name: "RESEARCH",
-        package_duration_1: "Doručení 5-7 dní",
+        package_duration_1: "5-7 dní + 10-14 dní péče",
         package_1_f1: "Analýza trhu",
         package_1_f2: "Analýza konkurence",
         package_1_f3: "Analýza publika",
@@ -657,7 +777,7 @@ const translations = {
         package_1_f5: "SWOT analýza",
 
         package_2_name: "STRATEGY",
-        package_duration_2: "Doručení 10-14 dní",
+        package_duration_2: "10-14 dní + 21-30 dní péče",
         package_2_f1: "Vše z Research",
         package_2_f2: "Marketingová strategie",
         package_2_f3: "Media plán",
@@ -665,7 +785,7 @@ const translations = {
         package_2_f5: "30denní akční plán",
 
         package_3_name: "LAUNCH",
-        package_duration_3: "Doručení 3-4 týdny",
+        package_duration_3: "3-4 týdny + 45-60 dní péče",
         package_3_f1: "Vše ze Strategy",
         package_3_f2: "Kreativní balíček",
         package_3_f3: "Struktura kampaní",
@@ -738,8 +858,8 @@ const translations = {
         faq_q4: "Co když se mi výsledek nebude líbit?",
         faq_a4: "Na každé etapě ukazujeme průběžné výsledky. Závěrečný dokument obsahuje 1 kolo revizí pro úplnou spokojenost.",
 
-        faq_q5: "Pracujete s malými rozpočty?",
-        faq_a5: "Ano. Vytvořili jsme balíčky od $500, dostupné pro startupy. Velký rozpočet není potřeba — je potřeba správná strategie.",
+        faq_q5: "Proč jsou ceny teď nižší než trh?",
+        faq_a5: "Budujeme nový agency brand a chceme vytvořit silné veřejné cases s dobrými partnery. Není to levná práce, ale early-client pricing: klient získá kvalitní exekuci a více pozornosti za nižší entry cost.",
 
         faq_q6: "V jakých oborech máte zkušenosti?",
         faq_a6: "E-commerce, SaaS, mobilní aplikace, servisní podniky. Geografie: Ukrajina, Polsko, Česko. Naše metodologie funguje pro jakýkoli obor.",
@@ -757,8 +877,112 @@ const translations = {
     }
 };
 
+const serviceModalDetails = {
+    service_1: {
+        price: "150€–500€",
+        market: "800€–2500€",
+        detail: {
+            uk: "Deep Research допомагає швидко зрозуміти ринок, конкурентів, аудиторію і реальні можливості для росту. Ми збираємо практичні інсайти, цифри, джерела і висновки, які можна використати для маркетингу, продукту, позиціонування або запуску.",
+            ru: "Deep Research помогает быстро понять рынок, конкурентов, аудиторию и реальные возможности для роста. Мы собираем практичные инсайты, цифры, источники и выводы, которые можно использовать для маркетинга, продукта, позиционирования или запуска.",
+            en: "Deep Research helps you understand the market, competitors, audience, and real growth opportunities quickly. We collect practical insights, numbers, sources, and conclusions that can be used for marketing, product, positioning, or launch decisions.",
+            cs: "Deep Research pomáhá rychle pochopit trh, konkurenci, publikum a reálné příležitosti pro růst. Sbíráme praktické insights, čísla, zdroje a závěry použitelné pro marketing, produkt, positioning nebo launch."
+        }
+    },
+    service_2: {
+        price: "450€–1200€",
+        market: "1800€–5000€",
+        detail: {
+            uk: "Marketing Strategy перетворює дослідження на конкретний план дій: воронка, канали, messaging, unit economics і пріоритети на перші 30 днів. Підходить бізнесам, яким потрібна не теорія, а зрозуміла система росту.",
+            ru: "Marketing Strategy превращает исследование в конкретный план действий: воронка, каналы, messaging, unit economics и приоритеты на первые 30 дней. Подходит бизнесам, которым нужна не теория, а понятная система роста.",
+            en: "Marketing Strategy turns research into a practical action plan: funnel, channels, messaging, unit economics, and first 30-day priorities. It is built for businesses that need a clear growth system, not theory.",
+            cs: "Marketing Strategy mění výzkum na konkrétní akční plán: funnel, kanály, messaging, unit economics a priority na prvních 30 dní. Je pro firmy, které potřebují jasný růstový systém, ne teorii."
+        }
+    },
+    service_3: {
+        price: "900€–2500€",
+        market: "3500€–9000€",
+        detail: {
+            uk: "GTM Launch — це практичний комплект для виходу на ринок: стратегія, креативний напрям, структура кампаній, перші гіпотези і супровід запуску. Ми допомагаємо зменшити хаос на старті і зробити запуск керованим.",
+            ru: "GTM Launch — это практичный комплект для выхода на рынок: стратегия, креативное направление, структура кампаний, первые гипотезы и сопровождение запуска. Мы помогаем уменьшить хаос на старте и сделать запуск управляемым.",
+            en: "GTM Launch is a practical market-entry package: strategy, creative direction, campaign structure, first hypotheses, and launch support. We help reduce launch chaos and make the first market push more controlled.",
+            cs: "GTM Launch je praktický balík pro vstup na trh: strategie, creative direction, struktura kampaní, první hypotézy a launch support. Pomáháme snížit chaos na startu a udělat launch řiditelný."
+        }
+    },
+    service_4: {
+        price: "150€–450€",
+        market: "700€–2200€",
+        detail: {
+            uk: "Creative Pack дає бізнесу готову основу для реклами і контенту: hooks, scripts, ad copy і visual direction. Ми фокусуємось на меседжах, які можна швидко тестувати і покращувати.",
+            ru: "Creative Pack даёт бизнесу готовую основу для рекламы и контента: hooks, scripts, ad copy и visual direction. Мы фокусируемся на сообщениях, которые можно быстро тестировать и улучшать.",
+            en: "Creative Pack gives the business a usable base for ads and content: hooks, scripts, ad copy, and visual direction. We focus on messages that can be tested and improved quickly.",
+            cs: "Creative Pack dává firmě použitelný základ pro reklamy a content: hooks, scripts, ad copy a visual direction. Soustředíme se na messaging, který lze rychle testovat a zlepšovat."
+        }
+    },
+    service_5: {
+        price: "350€–900€/mo",
+        market: "1200€–3500€/mo",
+        detail: {
+            uk: "Optimization знаходить, де реклама, воронка або процеси втрачають гроші, і перетворює це на план покращення. Формат підходить для бізнесів, які хочуть спокійний, системний monthly growth support.",
+            ru: "Optimization находит, где реклама, воронка или процессы теряют деньги, и превращает это в план улучшений. Формат подходит бизнесам, которым нужен спокойный, системный monthly growth support.",
+            en: "Optimization identifies where ads, funnels, or workflows are leaking money and turns that into an improvement plan. It fits businesses that want calm, systematic monthly growth support.",
+            cs: "Optimization hledá, kde reklama, funnel nebo procesy ztrácejí peníze, a mění to na plán zlepšení. Hodí se pro firmy, které chtějí klidný a systematický monthly growth support."
+        }
+    },
+    service_6: {
+        price: "250€–700€",
+        market: "1000€–3000€",
+        detail: {
+            uk: "ICP Deep Profile уточнює, хто ваш найцінніший клієнт, як він мислить, що купує, чого боїться і які меседжі працюють. Це корисна база для продукту, sales, ads, контенту і positioning.",
+            ru: "ICP Deep Profile уточняет, кто ваш самый ценный клиент, как он думает, что покупает, чего боится и какие сообщения работают. Это полезная база для продукта, sales, ads, контента и positioning.",
+            en: "ICP Deep Profile clarifies who your most valuable customer is, how they think, what they buy, what they fear, and which messages work. It becomes a strong base for product, sales, ads, content, and positioning.",
+            cs: "ICP Deep Profile zpřesňuje, kdo je váš nejcennější klient, jak přemýšlí, co kupuje, čeho se bojí a jaký messaging funguje. Je to silný základ pro product, sales, ads, content a positioning."
+        }
+    },
+    service_7: {
+        price: "150€–400€/mo",
+        market: "700€–2000€/mo",
+        detail: {
+            uk: "Competitor Watch тримає вас в курсі того, що роблять конкуренти: реклама, меседжі, офери, нові механіки і ринкові сигнали. Це легкий спосіб не втрачати контекст і швидше знаходити можливості.",
+            ru: "Competitor Watch держит вас в курсе того, что делают конкуренты: реклама, сообщения, офферы, новые механики и рыночные сигналы. Это лёгкий способ не терять контекст и быстрее находить возможности.",
+            en: "Competitor Watch keeps you aware of what competitors are doing: ads, messages, offers, new mechanics, and market signals. It is a lightweight way to keep context and spot opportunities faster.",
+            cs: "Competitor Watch vás drží v obraze o tom, co dělá konkurence: reklamy, messaging, offers, nové mechaniky a tržní signály. Je to lehký způsob, jak neztratit kontext a rychleji nacházet příležitosti."
+        }
+    },
+    service_8: {
+        price: "250€–800€",
+        market: "1200€–3500€",
+        detail: {
+            uk: "Funnel Audit показує, де користувачі губляться, де падає довіра і де бізнес втрачає конверсії. Ви отримуєте пріоритетні правки, які можна впроваджувати без зайвої теорії.",
+            ru: "Funnel Audit показывает, где пользователи теряются, где падает доверие и где бизнес теряет конверсии. Вы получаете приоритетные правки, которые можно внедрять без лишней теории.",
+            en: "Funnel Audit shows where users get lost, where trust drops, and where the business loses conversions. You receive prioritized fixes that can be implemented without extra theory.",
+            cs: "Funnel Audit ukazuje, kde se uživatelé ztrácejí, kde klesá důvěra a kde firma ztrácí konverze. Získáte prioritizované úpravy, které lze implementovat bez zbytečné teorie."
+        }
+    }
+};
+
 // Current language
 let currentLang = localStorage.getItem('lang') || 'uk';
+let currentTheme = localStorage.getItem('theme') || document.documentElement.getAttribute('data-theme') || 'dark';
+
+function setTheme(theme) {
+    currentTheme = theme === 'light' ? 'light' : 'dark';
+    localStorage.setItem('theme', currentTheme);
+    document.documentElement.setAttribute('data-theme', currentTheme);
+
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+        themeToggle.setAttribute('aria-pressed', currentTheme === 'light' ? 'true' : 'false');
+        themeToggle.classList.toggle('is-light', currentTheme === 'light');
+
+        const dictionary = translations[currentLang] || translations.uk;
+        themeToggle.setAttribute('aria-label', dictionary.theme_toggle_aria || 'Switch theme');
+        themeToggle.setAttribute('title', dictionary.theme_toggle_aria || 'Switch theme');
+    }
+}
+
+function toggleTheme() {
+    setTheme(currentTheme === 'light' ? 'dark' : 'light');
+}
 
 // Set language
 function setLanguage(lang) {
@@ -778,11 +1002,79 @@ function setLanguage(lang) {
             el.textContent = translations[lang][key];
         }
     });
+
+    setTheme(currentTheme);
+
+    const openModal = document.getElementById('serviceModal');
+    if (openModal && openModal.classList.contains('active')) {
+        updateServiceModal(openModal.getAttribute('data-active-service'));
+    }
+}
+
+function updateServiceModal(serviceId) {
+    const service = serviceModalDetails[serviceId];
+    if (!service) return;
+
+    const dictionary = translations[currentLang] || translations.uk;
+    const title = dictionary[`${serviceId}_title`];
+    const care = dictionary[`${serviceId}_care`];
+
+    document.getElementById('modalServiceTitle').textContent = title || '';
+    document.getElementById('modalServiceDesc').textContent = service.detail[currentLang] || service.detail.en;
+    document.getElementById('modalCurrentPrice').textContent = service.price;
+    document.getElementById('modalMarketPrice').textContent = service.market;
+    document.getElementById('modalCare').textContent = care || '';
+    document.getElementById('modalWhyText').textContent = dictionary.modal_why_text || translations.en.modal_why_text;
+}
+
+function openServiceModal(serviceId) {
+    const modal = document.getElementById('serviceModal');
+    if (!modal || !serviceModalDetails[serviceId]) return;
+
+    modal.setAttribute('data-active-service', serviceId);
+    updateServiceModal(serviceId);
+    modal.classList.add('active');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeServiceModal() {
+    const modal = document.getElementById('serviceModal');
+    if (!modal) return;
+
+    modal.classList.remove('active');
+    modal.setAttribute('aria-hidden', 'true');
+    modal.removeAttribute('data-active-service');
+    document.body.style.overflow = '';
 }
 
 // Initialize language
 document.addEventListener('DOMContentLoaded', () => {
+    setTheme(currentTheme);
     setLanguage(currentLang);
+
+    document.querySelectorAll('.service-card[data-service-id]').forEach(card => {
+        card.addEventListener('click', () => {
+            openServiceModal(card.getAttribute('data-service-id'));
+        });
+
+        card.addEventListener('keydown', event => {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                openServiceModal(card.getAttribute('data-service-id'));
+            }
+        });
+    });
+
+    document.querySelectorAll('[data-modal-close]').forEach(closeControl => {
+        closeControl.addEventListener('click', closeServiceModal);
+    });
+});
+
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+        closeServiceModal();
+    }
 });
 
 // Mobile menu

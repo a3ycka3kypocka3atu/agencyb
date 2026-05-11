@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STRAIGHTFORWARD AGENCY — Маркетингові дослідження та стратегії</title>
-    <meta name="description" content="Перетворюємо бізнес-задачі на чіткі рішення. AI-маркетинг дослідження, стратегії, аналіз конкурентів. Від $500. Результат за 5-7 днів.">
+    <meta name="description" content="Перетворюємо бізнес-задачі на чіткі рішення. Дослідження, стратегії, automation та практичні системи. Early pricing від 150€.">
     <meta property="og:title" content="STRAIGHTFORWARD AGENCY — Маркетингові дослідження та стратегії">
     <meta property="og:description" content="Глибокий аналіз ринку за 5-7 днів. Чіткі стратегії з конкретними цифрами.">
     <meta property="og:type" content="website">
@@ -14,6 +14,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        document.documentElement.setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
+    </script>
     <link rel="stylesheet" href="css/style.css">
     <noscript>
         <style>
@@ -41,6 +44,16 @@
                 <a href="#faq" data-i18n="nav_faq">FAQ</a>
             </nav>
             <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" type="button" onclick="toggleTheme()" aria-label="Theme switcher">
+                    <span class="theme-toggle-icons" aria-hidden="true">
+                        <svg class="theme-icon moon-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>
+                        <svg class="theme-icon sun-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>
+                    </span>
+                    <span class="theme-toggle-copy">
+                        <span class="theme-copy-dark" data-i18n="theme_dark">Темна</span>
+                        <span class="theme-copy-light" data-i18n="theme_light">Світла</span>
+                    </span>
+                </button>
                 <div class="language-switcher">
                     <button onclick="setLanguage('uk')" id="lang-uk" class="lang-btn active" title="UA">🇺🇦</button>
                     <button onclick="setLanguage('ru')" id="lang-ru" class="lang-btn" title="RU">🇷🇺</button>
@@ -99,7 +112,7 @@
                         <div class="hero-micro">
                             <span data-i18n="hero_micro">Працюємо з бізнесами в UA, PL, CZ</span>
                             <span class="separator">•</span>
-                            <span data-i18n="hero_micro_price">Від $500</span>
+                            <span data-i18n="hero_micro_price">Early pricing від 150€</span>
                             <span class="separator">•</span>
                             <span data-i18n="hero_micro_response">Відповідаємо за 48 год</span>
                         </div>
@@ -109,17 +122,17 @@
                         <div class="floating-cards">
                             <div class="float-card float-card-1">
                                 <div class="card-label" data-i18n="card_research">Research</div>
-                                <div class="card-value">$500</div>
+                                <div class="card-value">150€+</div>
                                 <div class="card-meta" data-i18n="card_meta_1">5-7 днів</div>
                             </div>
                             <div class="float-card float-card-2">
                                 <div class="card-label" data-i18n="card_strategy">Strategy</div>
-                                <div class="card-value">$1,500</div>
+                                <div class="card-value">450€+</div>
                                 <div class="card-meta" data-i18n="card_meta_2">10-14 днів</div>
                             </div>
                             <div class="float-card float-card-3">
                                 <div class="card-label" data-i18n="card_launch">Launch</div>
-                                <div class="card-value">$2,500</div>
+                                <div class="card-value">900€+</div>
                                 <div class="card-meta" data-i18n="card_meta_3">3-4 тижні</div>
                             </div>
                         </div>
@@ -128,25 +141,33 @@
             </div>
         </section>
 
-        <!-- SOCIAL PROOF BAR -->
-        <section class="proof-bar">
+        <!-- POSITIONING BAR -->
+        <section class="proof-bar positioning-bar">
             <div class="container">
-                <div class="proof-grid">
-                    <div class="proof-item">
-                        <div class="proof-number"><span data-target="15">0</span><span class="suffix">+</span></div>
-                        <div class="proof-label" data-i18n="proof_projects">Проектів завершено</div>
+                <div class="positioning-header reveal">
+                    <h2 data-i18n="positioning_title">Практичні системи для бізнесів, яким потрібен результат</h2>
+                    <p data-i18n="positioning_desc">Ми будуємо сильний новий agency brand через якісну роботу, чесну комунікацію і довгострокові партнерства.</p>
+                </div>
+                <div class="positioning-grid">
+                    <div class="positioning-item reveal" style="--i:1">
+                        <div class="positioning-kicker">01</div>
+                        <h3 data-i18n="positioning_1_title">Real Execution</h3>
+                        <p data-i18n="positioning_1_desc">Фокус на практичному впровадженні, а не на презентаційних стратегіях без дії.</p>
                     </div>
-                    <div class="proof-item">
-                        <div class="proof-number"><span data-target="48">0</span></div>
-                        <div class="proof-label" data-i18n="proof_response">Годин — середня відповідь</div>
+                    <div class="positioning-item reveal" style="--i:2">
+                        <div class="positioning-kicker">02</div>
+                        <h3 data-i18n="positioning_2_title">Long-Term Partnerships</h3>
+                        <p data-i18n="positioning_2_desc">Ми шукаємо клієнтів, з якими можна рости разом і будувати сильні публічні кейси.</p>
                     </div>
-                    <div class="proof-item">
-                        <div class="proof-number">$<span data-target="2">0</span><span class="suffix">M+</span></div>
-                        <div class="proof-label" data-i18n="proof_spend">Проаналізований ad spend</div>
+                    <div class="positioning-item reveal" style="--i:3">
+                        <div class="positioning-kicker">03</div>
+                        <h3 data-i18n="positioning_3_title">Modern Technologies</h3>
+                        <p data-i18n="positioning_3_desc">Швидкі modern stacks, automation systems, AI workflows і масштабовані рішення.</p>
                     </div>
-                    <div class="proof-item">
-                        <div class="proof-number"><span data-target="5">0</span><span class="suffix">-7</span></div>
-                        <div class="proof-label" data-i18n="proof_delivery">Днів до результату</div>
+                    <div class="positioning-item reveal" style="--i:4">
+                        <div class="positioning-kicker">04</div>
+                        <h3 data-i18n="positioning_4_title">Flexible Early Pricing</h3>
+                        <p data-i18n="positioning_4_desc">Поточні ціни нижчі за ринок, бо ми формуємо перші сильні кейси і партнерську екосистему.</p>
                     </div>
                 </div>
             </div>
@@ -165,7 +186,7 @@
                 </div>
 
                 <div class="services-grid">
-                    <div class="service-card reveal" style="--i:1">
+                    <div class="service-card reveal" style="--i:1" data-service-id="service_1" role="button" tabindex="0" aria-haspopup="dialog">
                         <div class="service-icon blue">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
                         </div>
@@ -175,13 +196,19 @@
                             <span class="del-label" data-i18n="service_deliverable">Ви отримаєте:</span>
                             <p data-i18n="service_1_deliverable">PDF-звіт 20-35 стор. з цифрами, джерелами і SWOT</p>
                         </div>
+                        <div class="early-badge" data-i18n="service_badge">ЦІНА ДЛЯ ПЕРШИХ КЛІЄНТІВ</div>
                         <div class="service-meta">
-                            <span class="service-price">$500</span>
+                            <div class="service-pricing">
+                                <span class="price-label" data-i18n="service_current_label">Поточна ціна</span>
+                                <span class="service-price">150€–500€</span>
+                                <span class="market-price">800€–2500€</span>
+                            </div>
                             <span class="service-time" data-i18n="service_1_time">5-7 днів</span>
                         </div>
+                        <div class="service-care" data-i18n="service_1_care">+ 10–14 днів супроводу після здачі</div>
                     </div>
 
-                    <div class="service-card reveal" style="--i:2">
+                    <div class="service-card reveal" style="--i:2" data-service-id="service_2" role="button" tabindex="0" aria-haspopup="dialog">
                         <div class="service-icon gold">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path></svg>
                         </div>
@@ -191,13 +218,19 @@
                             <span class="del-label" data-i18n="service_deliverable">Ви отримаєте:</span>
                             <p data-i18n="service_2_deliverable">Стратегічний документ 40-50 стор. + медіа-план + чеклісти</p>
                         </div>
+                        <div class="early-badge" data-i18n="service_badge">ЦІНА ДЛЯ ПЕРШИХ КЛІЄНТІВ</div>
                         <div class="service-meta">
-                            <span class="service-price">$1,500</span>
+                            <div class="service-pricing">
+                                <span class="price-label" data-i18n="service_current_label">Поточна ціна</span>
+                                <span class="service-price">450€–1200€</span>
+                                <span class="market-price">1800€–5000€</span>
+                            </div>
                             <span class="service-time" data-i18n="service_2_time">10-14 днів</span>
                         </div>
+                        <div class="service-care" data-i18n="service_2_care">+ 21–30 днів супроводу після здачі</div>
                     </div>
 
-                    <div class="service-card reveal" style="--i:3">
+                    <div class="service-card reveal" style="--i:3" data-service-id="service_3" role="button" tabindex="0" aria-haspopup="dialog">
                         <div class="service-icon coral">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"></path><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"></path></svg>
                         </div>
@@ -207,13 +240,19 @@
                             <span class="del-label" data-i18n="service_deliverable">Ви отримаєте:</span>
                             <p data-i18n="service_3_deliverable">Launch Kit: стратегія + креативи + кампанії + 30 днів підтримки</p>
                         </div>
+                        <div class="early-badge" data-i18n="service_badge">ЦІНА ДЛЯ ПЕРШИХ КЛІЄНТІВ</div>
                         <div class="service-meta">
-                            <span class="service-price">$2,500</span>
+                            <div class="service-pricing">
+                                <span class="price-label" data-i18n="service_current_label">Поточна ціна</span>
+                                <span class="service-price">900€–2500€</span>
+                                <span class="market-price">3500€–9000€</span>
+                            </div>
                             <span class="service-time" data-i18n="service_3_time">3-4 тижні</span>
                         </div>
+                        <div class="service-care" data-i18n="service_3_care">+ 45–60 днів супроводу запуску</div>
                     </div>
 
-                    <div class="service-card reveal" style="--i:4">
+                    <div class="service-card reveal" style="--i:4" data-service-id="service_4" role="button" tabindex="0" aria-haspopup="dialog">
                         <div class="service-icon green">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg>
                         </div>
@@ -223,13 +262,19 @@
                             <span class="del-label" data-i18n="service_deliverable">Ви отримаєте:</span>
                             <p data-i18n="service_4_deliverable">10 hooks + 5 скриптів + 20 ad copies + Visual Direction</p>
                         </div>
+                        <div class="early-badge" data-i18n="service_badge">ЦІНА ДЛЯ ПЕРШИХ КЛІЄНТІВ</div>
                         <div class="service-meta">
-                            <span class="service-price">$400</span>
+                            <div class="service-pricing">
+                                <span class="price-label" data-i18n="service_current_label">Поточна ціна</span>
+                                <span class="service-price">150€–450€</span>
+                                <span class="market-price">700€–2200€</span>
+                            </div>
                             <span class="service-time" data-i18n="service_4_time">3-5 днів</span>
                         </div>
+                        <div class="service-care" data-i18n="service_4_care">+ 10–14 днів правок і супроводу</div>
                     </div>
 
-                    <div class="service-card reveal" style="--i:5">
+                    <div class="service-card reveal" style="--i:5" data-service-id="service_5" role="button" tabindex="0" aria-haspopup="dialog">
                         <div class="service-icon blue">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
                         </div>
@@ -239,13 +284,19 @@
                             <span class="del-label" data-i18n="service_deliverable">Ви отримаєте:</span>
                             <p data-i18n="service_5_deliverable">Звіт з 10-15 рекомендаціями + scaling план</p>
                         </div>
+                        <div class="early-badge" data-i18n="service_badge">ЦІНА ДЛЯ ПЕРШИХ КЛІЄНТІВ</div>
                         <div class="service-meta">
-                            <span class="service-price">$800<span class="per">/міс</span></span>
+                            <div class="service-pricing">
+                                <span class="price-label" data-i18n="service_current_label">Поточна ціна</span>
+                                <span class="service-price">350€–900€<span class="per">/mo</span></span>
+                                <span class="market-price">1200€–3500€/mo</span>
+                            </div>
                             <span class="service-time" data-i18n="service_5_time">Щомісячно</span>
                         </div>
+                        <div class="service-care" data-i18n="service_5_care">Партнерський супровід протягом місяця</div>
                     </div>
 
-                    <div class="service-card reveal" style="--i:6">
+                    <div class="service-card reveal" style="--i:6" data-service-id="service_6" role="button" tabindex="0" aria-haspopup="dialog">
                         <div class="service-icon gold">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
                         </div>
@@ -255,13 +306,19 @@
                             <span class="del-label" data-i18n="service_deliverable">Ви отримаєте:</span>
                             <p data-i18n="service_6_deliverable">3-5 Persona карт + Messaging Matrix + Customer Journey</p>
                         </div>
+                        <div class="early-badge" data-i18n="service_badge">ЦІНА ДЛЯ ПЕРШИХ КЛІЄНТІВ</div>
                         <div class="service-meta">
-                            <span class="service-price">$600</span>
+                            <div class="service-pricing">
+                                <span class="price-label" data-i18n="service_current_label">Поточна ціна</span>
+                                <span class="service-price">250€–700€</span>
+                                <span class="market-price">1000€–3000€</span>
+                            </div>
                             <span class="service-time" data-i18n="service_6_time">7-10 днів</span>
                         </div>
+                        <div class="service-care" data-i18n="service_6_care">+ 14–21 день уточнень і супроводу</div>
                     </div>
 
-                    <div class="service-card reveal" style="--i:7">
+                    <div class="service-card reveal" style="--i:7" data-service-id="service_7" role="button" tabindex="0" aria-haspopup="dialog">
                         <div class="service-icon coral">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                         </div>
@@ -271,13 +328,19 @@
                             <span class="del-label" data-i18n="service_deliverable">Ви отримаєте:</span>
                             <p data-i18n="service_7_deliverable">Місячний дайджест 10-15 стор. + рекомендації</p>
                         </div>
+                        <div class="early-badge" data-i18n="service_badge">ЦІНА ДЛЯ ПЕРШИХ КЛІЄНТІВ</div>
                         <div class="service-meta">
-                            <span class="service-price">$300<span class="per">/міс</span></span>
+                            <div class="service-pricing">
+                                <span class="price-label" data-i18n="service_current_label">Поточна ціна</span>
+                                <span class="service-price">150€–400€<span class="per">/mo</span></span>
+                                <span class="market-price">700€–2000€/mo</span>
+                            </div>
                             <span class="service-time" data-i18n="service_7_time">Щомісяця</span>
                         </div>
+                        <div class="service-care" data-i18n="service_7_care">Щомісячний супровід і короткі рекомендації</div>
                     </div>
 
-                    <div class="service-card reveal" style="--i:8">
+                    <div class="service-card reveal" style="--i:8" data-service-id="service_8" role="button" tabindex="0" aria-haspopup="dialog">
                         <div class="service-icon green">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
                         </div>
@@ -287,10 +350,16 @@
                             <span class="del-label" data-i18n="service_deliverable">Ви отримаєте:</span>
                             <p data-i18n="service_8_deliverable">Звіт з friction points + 15 рекомендацій з пріоритетами</p>
                         </div>
+                        <div class="early-badge" data-i18n="service_badge">ЦІНА ДЛЯ ПЕРШИХ КЛІЄНТІВ</div>
                         <div class="service-meta">
-                            <span class="service-price">$700</span>
+                            <div class="service-pricing">
+                                <span class="price-label" data-i18n="service_current_label">Поточна ціна</span>
+                                <span class="service-price">250€–800€</span>
+                                <span class="market-price">1200€–3500€</span>
+                            </div>
                             <span class="service-time" data-i18n="service_8_time">5-7 днів</span>
                         </div>
+                        <div class="service-care" data-i18n="service_8_care">+ 14–21 день супроводу впровадження</div>
                     </div>
                 </div>
             </div>
@@ -311,8 +380,8 @@
                 <div class="pricing-grid">
                     <div class="pricing-card reveal" style="--i:1">
                         <h3 data-i18n="package_1_name">RESEARCH</h3>
-                        <div class="price">$500</div>
-                        <div class="duration" data-i18n="package_duration_1">5-7 днів доставки</div>
+                        <div class="price">150€–500€</div>
+                        <div class="duration" data-i18n="package_duration_1">5-7 днів + 10-14 днів супроводу</div>
                         <ul class="pricing-features">
                             <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_1_f1">Аналіз ринку</span></li>
                             <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_1_f2">Аналіз конкурентів</span></li>
@@ -326,8 +395,8 @@
                     <div class="pricing-card featured reveal" style="--i:2">
                         <div class="pricing-badge" data-i18n="badge_popular">ПОПУЛЯРНИЙ</div>
                         <h3 data-i18n="package_2_name">STRATEGY</h3>
-                        <div class="price">$1,500</div>
-                        <div class="duration" data-i18n="package_duration_2">10-14 днів доставки</div>
+                        <div class="price">450€–1200€</div>
+                        <div class="duration" data-i18n="package_duration_2">10-14 днів + 21-30 днів супроводу</div>
                         <ul class="pricing-features">
                             <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_2_f1">Все з Research</span></li>
                             <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_2_f2">Маркетингова стратегія</span></li>
@@ -341,8 +410,8 @@
                     <div class="pricing-card reveal" style="--i:3">
                         <div class="pricing-badge" data-i18n="badge_best">НАЙКРАЩИЙ</div>
                         <h3 data-i18n="package_3_name">LAUNCH</h3>
-                        <div class="price">$2,500</div>
-                        <div class="duration" data-i18n="package_duration_3">3-4 тижні доставки</div>
+                        <div class="price">900€–2500€</div>
+                        <div class="duration" data-i18n="package_duration_3">3-4 тижні + 45-60 днів супроводу</div>
                         <ul class="pricing-features">
                             <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_3_f1">Все зі Strategy</span></li>
                             <li><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg><span data-i18n="package_3_f2">Креативний пакет</span></li>
@@ -612,6 +681,39 @@
             </div>
         </section>
     </main>
+
+    <!-- SERVICE MODAL -->
+    <div class="service-modal" id="serviceModal" aria-hidden="true">
+        <div class="service-modal-backdrop" data-modal-close></div>
+        <div class="service-modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalServiceTitle">
+            <button class="service-modal-close" type="button" data-modal-close aria-label="Close service details">
+                <span></span>
+                <span></span>
+            </button>
+            <div class="early-badge modal-badge" data-i18n="service_badge">ЦІНА ДЛЯ ПЕРШИХ КЛІЄНТІВ</div>
+            <h2 id="modalServiceTitle"></h2>
+            <p class="modal-service-desc" id="modalServiceDesc"></p>
+            <div class="modal-price-grid">
+                <div class="modal-price-block">
+                    <span data-i18n="service_current_label">Поточна ціна</span>
+                    <strong id="modalCurrentPrice"></strong>
+                </div>
+                <div class="modal-market-block">
+                    <span data-i18n="service_market_label">Ринкова ціна</span>
+                    <strong id="modalMarketPrice"></strong>
+                </div>
+            </div>
+            <div class="modal-care-block">
+                <span data-i18n="modal_care_label">Супровід після здачі</span>
+                <strong id="modalCare"></strong>
+            </div>
+            <div class="modal-why-block">
+                <h3 data-i18n="modal_why_title">Чому ціна нижча?</h3>
+                <p id="modalWhyText"></p>
+            </div>
+            <a href="#audit" class="btn-primary modal-cta" data-modal-close data-i18n="modal_cta">Обговорити послугу</a>
+        </div>
+    </div>
 
     <!-- FOOTER -->
     <footer>
