@@ -26,11 +26,11 @@ const translations = {
         hero_micro_price: "Early pricing від 150€",
         hero_micro_response: "Відповідаємо за 48 год",
 
-        card_research: "Research",
+        card_research: "Дослідження",
         card_meta_1: "5-7 днів",
-        card_strategy: "Strategy",
+        card_strategy: "Стратегія",
         card_meta_2: "10-14 днів",
-        card_launch: "Launch",
+        card_launch: "Запуск",
         card_meta_3: "3-4 тижні",
 
         proof_projects: "Практичний підхід",
@@ -244,11 +244,11 @@ const translations = {
         hero_micro_price: "Early pricing от 150€",
         hero_micro_response: "Ответ за 48 ч",
 
-        card_research: "Research",
+        card_research: "Исследование",
         card_meta_1: "5-7 дней",
-        card_strategy: "Strategy",
+        card_strategy: "Стратегия",
         card_meta_2: "10-14 дней",
-        card_launch: "Launch",
+        card_launch: "Запуск",
         card_meta_3: "3-4 недели",
 
         proof_projects: "Практичный подход",
@@ -680,11 +680,11 @@ const translations = {
         hero_micro_price: "Early pricing od 150€",
         hero_micro_response: "Odpověď do 48 hod",
 
-        card_research: "Research",
+        card_research: "Výzkum",
         card_meta_1: "5-7 dní",
-        card_strategy: "Strategy",
+        card_strategy: "Strategie",
         card_meta_2: "10-14 dní",
-        card_launch: "Launch",
+        card_launch: "Spuštění",
         card_meta_3: "3-4 týdny",
 
         proof_projects: "Praktický přístup",
